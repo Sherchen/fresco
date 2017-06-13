@@ -29,35 +29,35 @@ def dryRunOnly() {
     return hasProperty('dryRun') ? property('dryRun').toBoolean() : false
 }
 
-bintray {
-    user = getBintrayUsername()
-    key = getBintrayApiKey()
-    configurations = ['archives']
-    pkg {
-        repo = bintrayRepo
-        userOrg =  bintrayUserOrg
-        name = bintrayName
-        desc = bintrayDescription
-        websiteUrl = projectUrl
-        issueTrackerUrl = issuesUrl
-        vcsUrl = scmUrl
-        licenses = projectLicenses
-        dryRun = dryRunOnly()
-        override = true
-        publish = true
-        publicDownloadNumbers = true
-        version {
-            desc = bintrayDescription
-            gpg {
-                sign = true
-                passphrase = getBintrayGpgPassword()
-            }
-            mavenCentralSync {
-                sync = shouldSyncWithMavenCentral()
-                user = getMavenCentralUsername()
-                password = getMavenCentralPassword()
-                close = '1' // If set to 0, you have to manually click release
-            }
-        }
-    }
-}
+//bintray {
+//    user = getBintrayUsername()
+//    key = getBintrayApiKey()
+//    configurations = ['archives']
+//    pkg {
+//        repo = bintrayRepo
+//        userOrg =  bintrayUserOrg
+//        name = bintrayName
+//        desc = bintrayDescription
+//        websiteUrl = projectUrl
+//        issueTrackerUrl = issuesUrl
+//        vcsUrl = scmUrl
+//        licenses = projectLicenses
+//        dryRun = dryRunOnly()
+//        override = true
+//        publish = true
+//        publicDownloadNumbers = true
+//        version {
+//            desc = bintrayDescription
+//            gpg {
+//                sign = true
+//                passphrase = getBintrayGpgPassword()
+//            }
+//            mavenCentralSync {
+//                sync = shouldSyncWithMavenCentral()
+//                user = getMavenCentralUsername()
+//                password = getMavenCentralPassword()
+//                close = '1' // If set to 0, you have to manually click release
+//            }
+//        }
+//    }
+//}

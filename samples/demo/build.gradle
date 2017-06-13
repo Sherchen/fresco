@@ -15,12 +15,16 @@ android {
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
     }
 
+    flavorDimensions "color"
+
     productFlavors {
         // TO TEST THE REMOTE MODULES DURING A RELEASE, COMMENT OUT THE "internal" FLAVOR AND
         // UNCOMMENT THE REST OTHERWISE A CLASH OCCURS DUE TO THEM TRYING TO CREATE TASKS OF THE
         // SAME NAME
 
-        internal
+        internal {
+            dimension 'color'
+        }
 //        mavenBasic
 //        mavenWithWebp
 //        mavenWithAnimatedWebp

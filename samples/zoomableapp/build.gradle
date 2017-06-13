@@ -15,8 +15,12 @@ android {
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
     }
 
+    flavorDimensions "color"
+
     productFlavors {
-        internal
+        internal {
+            dimension 'color'
+        }
     }
 
     buildTypes {
