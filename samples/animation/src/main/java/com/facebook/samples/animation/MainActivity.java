@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
 
     mAnimatedGifView = (SimpleDraweeView) findViewById(R.id.animated_gif);
     Uri animatedGifUri =
-        Uri.parse("http://s3.amazonaws.com/giphygifs/media/4aBQ9oNjgEQ2k/giphy.gif");
+        Uri.parse("http://www.asqql.com/do/download/?FileName=http://upfile.asqql.com/2009pasdfasdfic2009s305985-ts/2017-2/2017232129521870.gif");
 
     final TextView gifInfo = (TextView) findViewById(R.id.gif_info);
 

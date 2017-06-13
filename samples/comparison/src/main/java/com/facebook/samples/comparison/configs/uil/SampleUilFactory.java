@@ -36,6 +36,7 @@ public class SampleUilFactory {
           .cacheInMemory(true)
           .cacheOnDisk(true)
           .build();
+
       ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context)
           .defaultDisplayImageOptions(displayImageOptions)
           .diskCacheSize(ConfigConstants.MAX_DISK_CACHE_SIZE)

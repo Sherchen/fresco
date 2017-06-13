@@ -1,0 +1,4 @@
+1. 每隔一段时间获取使用内存信息
+2. 通过final long heapMemory = runtime.totalMemory() - runtime.freeMemory();
+3. appendSize(sb, Debug.getNativeHeapSize());
+4. 通过Instrumentation类来管理所有的加载图库，最后计算从开始到成功的等待时间。
